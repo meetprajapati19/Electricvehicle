@@ -305,3 +305,19 @@ color: #ff7200;
 .product a:hover{
 	transform: scale(1.1);
 }
+
+/* hello om */
+/* scrollbar */
+
+::-webkit-scrollbar{
+    width: 15px;
+
+}
+
+::-webkit-scrollbar-track{
+    background: #f0eeeb9f;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#ff7200,#000000df);
+    border-radius: 20px ;
+}
