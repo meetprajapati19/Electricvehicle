@@ -159,7 +159,7 @@ ul li a:hover{
 @keyframes backcolor {
     100%{
         background-position: 0 0;   /* text animation over*/
-        }
+}
 }
 
 
