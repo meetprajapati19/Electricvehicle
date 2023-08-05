@@ -159,9 +159,24 @@ ul li a:hover{
     padding-left: 20px;
     margin-top: 9%;
     letter-spacing: 2px;
+<<<<<<< HEAD
+=======
+    -webkit-text-stroke: 1px #fff;    /* text animation*/
+    color: transparent;
+    background-image: linear-gradient(#fff,#fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -200px 0 ;
+    animation: backcolor 5s linear infinite alternate;
+
+>>>>>>> 2165fe5a60307d7471d21764ef1a2e90dc71456c
 }
 
-
+@keyframes backcolor {
+    100%{
+        background-position: 0 0;   /* text animation over*/
+}
+}
 
 
 .content span{
