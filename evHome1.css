@@ -36,9 +36,22 @@
 }
 
 .icon{     /*div of icon in which icon stay*/
-    width: 200px;
+    width: 100px;
     float: left;
-    height: 70px;
+    height: 80px;
+}
+.icon img{
+    width: 100px;
+    float: left;
+    height: 80px;
+}
+.icon img:hover{
+    animation: rotateAnimation 0.7s ;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
 }
 
 .logo{    /*main logo of site*/
@@ -52,7 +65,7 @@
 }
 
 .menu{    /*div of list of navigation   (home,services..etc) */
-    width: 900px;
+    width: 1050px;
     float: left;
     height: 70px;
 }
@@ -159,17 +172,6 @@ ul li a:hover{
     padding-left: 20px;
     margin-top: 9%;
     letter-spacing: 2px;
-<<<<<<< HEAD
-=======
-    -webkit-text-stroke: 1px #fff;    /* text animation*/
-    color: transparent;
-    background-image: linear-gradient(#fff,#fff);
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-position: -200px 0 ;
-    animation: backcolor 5s linear infinite alternate;
-
->>>>>>> 2165fe5a60307d7471d21764ef1a2e90dc71456c
 }
 
 @keyframes backcolor {
@@ -210,14 +212,12 @@ justify-content: center;
 }
 .socialicon a:hover{
     background-color: #ff7200;
-
     transition: 0.8s;
 
 }
 .socialicon a:hover i{
 color: white;
 transition: 0.4s;
-
 }
 .footernav{
     margin:30px;
@@ -307,10 +307,11 @@ color: #ff7200;
 
 .product:hover img{
 	scale:  1.1;
+    
 }
 
 .product:hover {
-	box-shadow: 5px 15px 25px #706767;   /*modal box shadow*/
+	box-shadow: 5px 10px 15px #423d3d;   /*modal box shadow*/
 }
 
 .product img {
