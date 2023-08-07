@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(to top, rgba(0,0,0,0.5) 80%,rgba(0,0,0,0.5) 80%); */
+    background-color: rgba(40, 39, 39, 0.868);
+    background-size: cover;
+    z-index: -1; /* added */
+  }
+
+
+.main{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* flex-wrap: wrap; */
+}
+
+
+
+/* navigation bar  css*/
+
+.navbar{
+    width: 1500px;
+    height: 75px;
+    margin-left: 10px;
+}
+
+.icon{     /*div of icon in which icon stay*/
+    width: 100px;
+    float: left;
+    height: 80px;
+}
+.icon img{
+    width: 100px;
+    float: left;
+    height: 80px;
+}
+.icon img:hover{
+    animation: rotateAnimation 3s ;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
+}
+
+.logo{    /*main logo of site*/
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{    /*div of list of navigation   (home,services..etc) */
+    width: 1050px;
+    float: left;
+    height: 70px;
+}
+
+#navlist{/*list of home,services..etc*/
+    float: right;
+     display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{/**/
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+
+
+/* search bar div */
+.search{
+    width: 330px;
+    float: right;
+    margin-left: 0px;
+}
+/* search bar input tag css */
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+/* search butten */
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+
+
+
+
+/* //containers */
+
+
+
+
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+    background: transparent;
+     float:left;
+}
+
+.product{
+	overflow: hidden;
+	text-align: center;
+	width: 420px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 5px;
+    font-size: 1.7rem;
+	background: transparent;
+	color: #ff7200;
+	padding: 0.5rem;
+    background-color: #f4872eba;
+
+    
+}
+
+
+.product:hover img{
+	scale:  1.1;
+    
+    
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #9d9999;  
+    background-color: #cf6209;
+}
+
+ .product img {
+	transition: all 0.3s;
+}
+
+/* .product a:link, .product a:visited{
+	color: #ececec;   
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+} 
+
+.product a:hover{
+	transform: scale(1.1);
+}
+
+/* hello om 
+scrollbar 
+/* .all-products{
+    display: flex;
+    align-items: center;
+    float:left;
+	
+}
+.product{
+    width: 400px;
+    height: 400px;
+    margin: 2rem;
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+	flex-direction: column;
+    border-radius: 1.2rem;
+    justify-content: center;
+} */
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background: #ff7200 ;
+    
+}
+::-webkit-scrollbar-thumb{
+    /* background: linear-gradient(#e47215,#4d4c4cdf 80%); */
+    background: #ffbb00 ;
+    border-radius: 4px ;
+}
