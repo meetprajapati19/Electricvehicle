@@ -184,6 +184,10 @@ ul li a:hover{
     font-size: 65px
 }
 
+.par{
+    color: #ffffff;
+    font-size: 25px;
+}
 footer{
     background-color: #181818;
     
@@ -324,18 +328,23 @@ info_box{
     padding-left: 80px;
     padding-bottom: 70px;
 }
-
+.info_hyperdiv{
+    padding-left: 80px;
+}
 .info_hyper{
     font-size: 24px;
     font-weight: 400;
     line-height: 20px;
-    padding-left: 80px;
+    /* padding-left: 80px; */
     color: #fff!important;
     padding-bottom: 4px;
-    /* border-bottom: 1px solid #fff; */
+    border-bottom: 1px solid #ff7200; 
+    
     display: inline-flex; 
     grid-gap: 12px;
     gap: 12px;
+    /* text-decoration: underline #ff7200; */
+    text-decoration: none;
 }
 
 .info_img{
@@ -354,21 +363,15 @@ info_box{
 }
 
 .info_footer{
-    font-size: 10px;
-    line-height: 12px;
-    color: #fff;
-    font-size: 12px;
-    line-height: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: .16px;
-    display: flex;
-    align-items: center;
-    grid-gap: 4px;
-    gap: 4px;
+    position: absolute;
+    /* bottom: -650px;
+    right: 30px; */
+    bottom: -672px;
+    right: 112px;
 
 }
 
-.info_footer.footer_num{
+.footer_num{
     font-size: 10px;
     line-height: 30px;
     margin-bottom: 2px;
@@ -381,7 +384,7 @@ info_box{
 
 }
 
-.info_footer.info_fast{
+.info_fast{
     font-size: 15px;
     line-height: 12px;
     color: #fff;
@@ -405,7 +408,7 @@ info_box{
     line-height: 16px;
     letter-spacing: .16px;
 
-}
+}.
 /* infomation over */
 
 
