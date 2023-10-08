@@ -190,6 +190,7 @@ body{
     margin-bottom: 10px;
     background: none;
     border-bottom: 2px solid #ff7200;
+    color: #fff;
 }
 
 .container form input::placeholder{
@@ -199,6 +200,7 @@ body{
 .container form #lastName,
 .container form #mobile{
     margin-left: 20px;
+    color: #fff;
 }
 
 .container form h4{

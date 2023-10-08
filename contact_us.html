@@ -47,15 +47,32 @@
             <h1>Contact Us Form</h1>
             <input type="text" id="firstName" placeholder="First Name" required>
             <input type="text" id="lastName" placeholder="Last Name" required>
-            <input type="email" id="email" placeholder="Email" required>
+            <input type="email" id="emailAddress" placeholder="Email" required>
             <input type="text" id="mobile" placeholder="Mobile" required>
             <h4>Type Your Message Here...</h4>
             <textarea required></textarea>
-            <input type="submit" value="Send" id="button">
+         
+            <button id="button" type="submit" value="Send" onclick="onSubmitData()">Submit</button>
             <!-- <div class="log">
                 <a href="https://www.facebook.com/login/"><i class="fa-solid fa-phone"></i></a>
             </div> -->
         </form>
+    <script>
+                function onSubmitData() {
+                  const firstName = document.getElementById("firstName").value;
+                  const lastName = document.getElementById("lastName").value;
+                  const emailAddress = document.getElementById("emailAddress").value;
+                  const mobile = document.getElementById("mobile").value;
+                  fetch("http://localhost:3000/store-data", {
+                    method: 'post', 
+                    body: JSON.stringify({ "firstname": firstName, "lastName" : lastName , "emailAddress" : emailAddress ,"mobile" : mobile}),
+                    headers: {
+                      'Content-Type': 'application/json'
+                    }
+                  }
+                  ).then((res) => console.log(res))
+                }
+              </script>
     </div>
 </div>    
 </body>
